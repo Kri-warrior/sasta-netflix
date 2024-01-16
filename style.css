@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.main {
+    background: url(assets/bg.jpg);
+    width: 100%;
+    height: 87vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vw);
+    object-fit: cover;
+}
+
+.main .box {
+    height: 87vh;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    /* background: black; */
+    /*background: transparent; */
+    height: 82px;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 140px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87%;
+    flex-direction: column;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    /* font-weight: 900; */
+    position: relative;
+    z-index: 1;
+    /* padding: 0 30px; */
+    text-align: center;
+}
+
+#one {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#two {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#three {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signin{
+    margin-top: 10px;
+}
+
+body{
+    background: black;
+}
+
+.line{
+    height: 15px;
+    background: rgb(35, 35, 35);
+    z-index: 11;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.signin form input{
+    color: white;
+}
+
+@media only screen and (min-width:1300px){
+    .line{
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    img{
+        position: relative;
+        top: 1vh;
+    }
+
+    .buttons{
+        top: 1.5vh;
+    }
+
+}
+
+
+@media only screen and (min-width:1330px){
+    .line{
+        top: 5px;
+    }
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bolder;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-red{
+    background: red;
+    color: white;
+    background: red;
+    position: relative;
+    color: white;
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 25px;
+    margin: auto;
+    top: .11vh;
+    margin-left: 1vw;
+}
+
+.buttons{
+    display: flex;
+    position: relative;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx{
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background: transparent;
+}
+
+.signin{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.signin input{
+    background: black;
+    opacity: 0.5;
+    height: 49px;
+    width: 300px;
+    padding-left: 15px;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+}
+
+.signin input::placeholder{
+    color: white;
+    font-size: 17px;
+    
+}
+
+.signin input:focus{
+    border: none;
+    outline: 3px solid white;
+}
+
+.signin input[type=text]{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    z-index: 5;
+}
+
+.btn-red-sm{
+    background: red;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 3px;
+}
+
+.buttons svg{
+    padding-right: 5px;
+}
+
+.btn{
+    position: relative;
+    z-index: 10;
+}
+
+.btnl{
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    outline: 0.1px solid white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btnl:focus{
+    outline: 2px solid white;
+}
+
+.first{
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.image img{
+    width: 35vw;
+    position: absolute;
+}
+
+.second .image img{
+    position: relative;
+}
+
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.image video{
+    position: relative;
+    height: 16vw;
+    top: -1vh;
+    left: 4.5vw;
+    z-index: -1;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.text1{
+    font-size: 48px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+}
+
+.text2{
+    font-size: 24px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+}
+
+.mobile{
+    z-index: -1;
+    /* top: 3vh; */
+}
+
+.childrenimg{
+    position: relative;
+    /* top: 5vh; */
+}
+
+.tw{
+    position: relative;
+}
+
+.faq{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 34px 34px;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'Martel Sans', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#three{
+    margin-bottom: 2vh;
+}
+
+summary{
+    list-style: none;
+}
+
+.faqbox{
+    background: rgb(45, 45, 45);
+    width: 70vw;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+.faqbox:hover{
+    background: rgb(65, 65, 65);
+}
+
+.answer{
+    position: relative;
+    /* top: 2vh; */
+    background: red;
+    /* margin-top: 5px; */
+}
+
+.bx-plus{
+    position: relative;
+    top: 0.25vh;
+}
+
+.faqbox > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer{
+    color: rgb(171, 171, 171);
+}
+
+footer a{
+    color: rgb(171, 171, 171);
+}
+
+.question{
+    max-width: 60vw;
+    margin: auto;
+    padding: 23px 0;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.image{
+    /* top: 13vh; */
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.lastbtn .ls{
+    margin: 23px 0;
+}
+
+footer{
+    margin: 23px 0;
+}
+
+.lastbtn{
+    margin-bottom: 50px;
+}
+
+/*media queries section*/
+
+@media screen and (max-width: 800px){
+    .first{
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10vh;
+    }
+
+    .image video{
+        position: relative;
+        height: 27vw;
+        top: 1vh;
+        left: 6.5vw;
+        z-index: -1;
+    }
+
+    .image img{
+        width: 50vw;
+    }
+
+    .image{
+        overflow: hidden;
+        /* top: 0vh; */
+    }
+
+    .second{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:850px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 23px;
+    }
+}
+
+@media screen and (max-width:385px){
+    .faq h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:529px){
+    .btn-red{
+        position: relative;
+        top: 2vh;
+    }
+}
+
+@media screen and (max-width:599px){
+    .faq button{
+        position: relative;
+        top: 2vh;
+    }
+}
+
+@media screen and (max-width:600px){
+    .hero #one{
+        font-size: 30px;
+        padding: 0 23px;
+    }
+
+    .hero #two{
+        font-size: 22px;
+        padding: 0 23px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .hero #one{
+        font-size: 26px;
+        padding: 0 23px;
+    }
+
+    .hero #two{
+        font-size: 19px;
+        padding: 0 23px;
+    }
+
+    .hero #three{
+        font-size: 14px;
+        padding: 0 23px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .image video{
+        position: relative;
+        height: 33vw;
+        top: 2vh;
+        left: 7.5vw;
+        z-index: -1;
+    }
+
+    .image img{
+        width: 60vw;
+    }
+
+    .image{
+        overflow: hidden;
+        /* top: 0vh; */
+        width: 100%;
+    }
+}
